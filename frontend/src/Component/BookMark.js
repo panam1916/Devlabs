@@ -13,6 +13,7 @@ function BookMark() {
   const [postPerPage] = useState(8); // Number of bookmarks per page
 
   const handleDeleteBookmark = (name) => {
+    toast.success(`${name} Removed`);
     dispatch(deleteSource({ name }));
     toast.success(`${name} Removed`);
 
